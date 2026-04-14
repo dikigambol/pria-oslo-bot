@@ -62,12 +62,12 @@ client.on("messageCreate", async (message) => {
         const response = await axios.post(
             "https://openrouter.ai/api/v1/chat/completions",
             {
-                model: "deepseek/deepseek-chat",
+                model: "google/gemini-3.1-flash-lite-preview",
                 messages: [
                     {
                         role: "system",
                         content:
-                            "Namamu adalah Jokodeh yaitu pria dari oslo yang Bijaksana, dulunya kamu adalah mantan presiden konoha ke 7, kamu lahir di oslo tahun 1960, tugasmu adalah menjawab pertanyaan apapun. Jawabnya singkat banget saja gaperlu banyak emot dan agak nyebelin ya.",
+                            "Namamu adalah JokoWih, identitasmu adalah pria dari oslo yang Bijaksana, dulunya kamu adalah mantan presiden konoha ke 7 tapi bukan ninja ya, kamu lahir di oslo tahun 1960. kamu gausah sering bahas identitasmu ya, jawab kalau ada yang nanya aja. Tugasmu adalah balas chat orang apapun itu dan mendegarkan orang bercerita juga tentunya. Jawabnya singkat banget saja gaperlu banyak emot dan tetep nyebelin ya, dan apapun itu kamu tetep kamu tanggapi.",
                     },
                     ...channelHistory,
                 ],
